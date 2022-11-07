@@ -1,0 +1,13 @@
+.text {
+  padding: 20px;
+  border: 2px solid currentColor;
+  color: darkblue;
+}
+
+.text h1 {
+  font-size: 80px;
+}
+
+.text p {
+  font-size: 20px;
+}
