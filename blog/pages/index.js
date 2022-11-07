@@ -1,16 +1,18 @@
 import Head from "next/head";
 import Image from "next/image";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import Hero from "../components/hero";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <>
-      <header>HEADER</header>
+      <Header></Header>
       <main>
-        <h1>CUBE</h1>
-        <div>アウトプットしていくサイト</div>
+        <Hero></Hero>
       </main>
-      <footer>FOOTER</footer>
+      <Footer></Footer>
     </>
   );
 }
