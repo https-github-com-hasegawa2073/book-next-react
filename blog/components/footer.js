@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "./logo";
 import styles from "styles/footer.module.css";
 import Container from "components/container";
+import Social from "./social";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
       <Container>
         <div className={styles.flexContainer}>
           <Logo />
-          [ソーシャル]
+          <Social />
         </div>
       </Container>
     </footer>

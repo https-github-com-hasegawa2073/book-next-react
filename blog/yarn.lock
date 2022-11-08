@@ -32,10 +32,22 @@
     "minimatch" "^3.1.2"
     "strip-json-comments" "^3.1.1"
 
+"@fortawesome/fontawesome-common-types@^0.1.7":
+  "integrity" "sha512-ego8jRVSHfq/iq4KRZJKQeUAdi3ZjGNrqw4oPN3fNdvTBnLCSntwVCnc37bsAJP9UB8MhrTfPnZYxkv2vpS4pg=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.1.7.tgz"
+  "version" "0.1.7"
+
 "@fortawesome/fontawesome-common-types@6.2.0":
   "integrity" "sha512-rBevIsj2nclStJ7AxTdfsa3ovHb1H+qApwrxcTVo+NNdeJiB9V75hsKfrkG5AwNcRUNxrPPiScGYCNmLMoh8pg=="
   "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.2.0.tgz"
   "version" "6.2.0"
+
+"@fortawesome/fontawesome-free-brands@^5.0.13":
+  "integrity" "sha512-xC/sEPpfcJPvUbud2GyscLCLQlE2DVBYaTHVwuyVGliYBdYejSEYMINU8FN5A0xhO68yCbpCfMlBv6Gqby+jww=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-free-brands/-/fontawesome-free-brands-5.0.13.tgz"
+  "version" "5.0.13"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.1.7"
 
 "@fortawesome/fontawesome-svg-core@^6.2.0", "@fortawesome/fontawesome-svg-core@~1 || ~6":
   "integrity" "sha512-Cf2mAAeMWFMzpLC7Y9H1I4o3wEU+XovVJhTiNG8ZNgSQj53yl7OCJaS80K4YjrABWZzbAHVaoHE1dVJ27AAYXw=="
