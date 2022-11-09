@@ -9,7 +9,9 @@ import {
   TwoColumnSidebar,
 } from "components/two-column";
 import { getPostBySlug } from "lib/api";
+import extractText from "lib/extract-text";
 import Image from "next/image";
+import Meta from "components/meta";
 
 export default function Schedule({
   title,
@@ -17,9 +19,17 @@ export default function Schedule({
   content,
   eyecatch,
   categories,
+  description,
 }) {
   return (
     <Container>
+      <Meta
+        pageTitle={title}
+        pageDesc={description}
+        pageImg={eyecatch.url}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
+      />
       <article>
         <PostHeader title={title} subtitle="Blog Articles" publish={publish} />
         <figure>
@@ -53,6 +63,8 @@ export async function getStaticProps() {
 
   const post = await getPostBySlug(slug);
 
+  const description = extractText(post.content);
+
   return {
     props: {
       title: post.title,
@@ -60,6 +72,7 @@ export async function getStaticProps() {
       content: post.content,
       eyecatch: post.eyecatch,
       categories: post.categories,
+      description: description,
     },
   };
 }
