@@ -1,5 +1,8 @@
 import Container from "components/container";
+import ConvertBody from "components/convert-body";
+import PostBody from "components/post-body";
 import PostHeader from "components/post-header";
+import { TwoColumn, TwoColumnMain } from "components/two-column";
 import { getPostBySlug } from "lib/api";
 import Image from "next/image";
 
@@ -25,6 +28,13 @@ export default function Schedule({
             priority
           />
         </figure>
+        <TwoColumn>
+          <TwoColumnMain>
+            <PostBody>
+              <ConvertBody contentHTML={content} />
+            </PostBody>
+          </TwoColumnMain>
+        </TwoColumn>
       </article>
     </Container>
   );
