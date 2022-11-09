@@ -1,4 +1,5 @@
 import Container from "components/container";
+import PostHeader from "components/post-header";
 import { getPostBySlug } from "lib/api";
 
 export default function Schedule({
@@ -10,7 +11,9 @@ export default function Schedule({
 }) {
   return (
     <Container>
-      <h1>{title}</h1>
+      <article>
+        <PostHeader title={title} subtitle="Blog Articles" publish={publish} />
+      </article>
     </Container>
   );
 }
